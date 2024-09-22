@@ -62,6 +62,13 @@ Yan_Etki_Bildirim_Tarihi
 
 Bütün hastaların uyruğu Türkiye olduğundan Uyruk Sütununu da dropluyoruz.
 
+BOŞ DEĞERLERİ DOLDURMA
+
+'Alerjilerim', 'Kronik Hastaliklarim', 'Anne Kronik Hastaliklari', 'Baba Kronik Hastaliklari', 'Erkek Kardes Kronik Hastaliklari', 'Kiz Kardes Kronik Hastaliklari' gibi sütunlarda ki boş değerleri 'Yok' şeklinde doldurmak, mantıklı olacaktır. Çünkü bu boş değerler hastanın bu durumları yaşamadığını belirtmek için kullanılabilir. Bu tarz bir yaklaşım verisetinin anlamlılığını korur ve analizlerde boş değerlerin yaşatacağı sorunları azaltır.
+
+Bunun haricinde ise 'Cinsiyet', 'Il' ve 'Kan Grubu' bu gibi sütunlar hastanın kişisel ve sağlık bilgisi olduğundan herhangi bir şekilde doldurulamaz. Bu yüzden 'Bilinmiyor' ifadesiyle doldurma kararı aldım.
+
+'Boy' ve 'Kilo' değerleri için KNNImputer kullandım. Çünkü KNNImputer daha doğru ve anlamlı doldurma konusunda daha iyi olduğunu düşündüm. Özellikle Sayısal değerlerde.
 
 İLAÇ İSİMLERİNİN ANALİZ İÇİN STANDARDİZE EDİLMESİ
 
